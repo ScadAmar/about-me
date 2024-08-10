@@ -246,3 +246,63 @@ p {
 .right-tl-title p {
   text-align: left;
 }
+
+@media screen and (max-width: 1024px) {
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .right-title::after {
+    width: 50%;
+  }
+
+  .left-section {
+    grid-column: span 3;
+  }
+
+  .right-section {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .right-title::after {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right-title::after {
+    width: 30%;
+  }
+
+  .right-content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .right-content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .left-content {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main-content {
+    font-size: 0.7rem;
+  }
+
+  .main-title {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 1.2rem;
+  }
+  .career {
+    font-size: 0.9rem;
+  }
+}
