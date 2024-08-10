@@ -217,6 +217,10 @@ p {
   padding-bottom: 1.5rem;
 }
 
+.tl-title {
+  padding-right: 1rem;
+}
+
 .tl-title-2::before {
   content: "";
   position: absolute;
